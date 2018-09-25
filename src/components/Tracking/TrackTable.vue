@@ -274,13 +274,12 @@ export default {
       for (let i = 0; i <= this.documents.states.length; i++) {
         this.states[i] = this.getState(i + 1)
       }
-    }
-    // ,
-    // getState: async function (state) {
-    //   const result = this.documents.states.filter(d => {
-    //     return d.state === state
-    //   })
-    // }
+    }/* ,
+    getState: async function (state) {
+      const result = this.documents.states.filter(d => {
+        return d.state === state
+      })
+    } */
   }
 }
 </script>

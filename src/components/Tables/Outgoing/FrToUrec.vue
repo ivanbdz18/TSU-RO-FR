@@ -1,14 +1,10 @@
 <template>
   <div>
-    <md-table v-model="documentsState9" :table-header-color="tableHeaderColor">
-      <md-table-row class="md-body-2" slot="md-table-row" slot-scope="{ item }">
-        <md-table-cell md-label="Time Date">{{ item.time_date }}</md-table-cell>
+    <md-table v-model="documentsState6" :table-header-color="tableHeaderColor">
+      <md-table-row slot="md-table-row" slot-scope="{ item }">
+        <md-table-cell md-label="Time Date">{{ item.received }}</md-table-cell>
         <md-table-cell md-label="Tracking No.">{{ item.tracking_number }}</md-table-cell>
         <md-table-cell md-label="Research Title">{{ item.title }}</md-table-cell>
-        <md-table-cell md-label="Grade in Colloquium">{{ item.gradeCol }}</md-table-cell>
-        <md-table-cell md-label="Grade in UREC">{{ item.gradeUrec }}</md-table-cell>
-        <md-table-cell md-label="Incentive">{{ item.incentive }}</md-table-cell>
-        <md-table-cell md-label="University Agenda">{{ item.univAgenda }}</md-table-cell>
         <md-table-cell md-label="Action">
           <md-button class="md-raised md-success" @click.native="proceed(item.id)">Proceed</md-button>
         </md-table-cell>
@@ -21,7 +17,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'fr-to-rerc',
+  name: 'fr-to-urec',
   props: {
     tableHeaderColor: {
       type: String,
@@ -32,11 +28,11 @@ export default {
     return {
       selected: [],
       documents: [],
-      documentsState9: []
+      documentsState6: []
     }
   },
   created: async function () {
-  await this.getDocuments()
+    await this.getDocuments()
   },
   methods: {
     proceed: async function (documentId) {
@@ -47,7 +43,7 @@ export default {
     getDocuments: async function () {
       const rootApi = process.env.VUE_APP_ROOT_API
       this.documents = (await axios.get(`${rootApi}/documents`)).data
-      this.documentsState9 = this.documents.filter(d => d.state === 9 && d.received !== null)
+      this.documentsState6 = this.documents.filter(d => d.state === 6 && d.received !== null)
     }
   }
 }

@@ -15,11 +15,33 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
         <md-card>
           <md-card-header data-background-color="green">
+            <h4 class="md-title">Outgoing Research proceeding to UREC</h4>
+            <p class="category">List of Documents</p>
+          </md-card-header>
+          <md-card-content>
+            <fr-to-urec class="md-body-2" table-header-color="orange"></fr-to-urec>
+          </md-card-content>
+        </md-card>
+      </div>
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
+        <md-card>
+          <md-card-header data-background-color="green">
             <h4 class="md-title">Outgoing Research proceeding to RERC</h4>
             <p class="category">List of Documents</p>
           </md-card-header>
           <md-card-content>
             <fr-to-rerc class="md-body-2" table-header-color="orange"></fr-to-rerc>
+          </md-card-content>
+        </md-card>
+      </div>
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
+        <md-card>
+          <md-card-header data-background-color="green">
+            <h4 class="md-title">Outgoing Research proceeding to University Research Office</h4>
+            <p class="category">List of Documents</p>
+          </md-card-header>
+          <md-card-content>
+            <fr-to-uro class="md-body-2" table-header-color="orange"></fr-to-uro>
           </md-card-content>
         </md-card>
       </div>
@@ -42,14 +64,18 @@
 import {
   FrToCrec,
   FrToRerc,
-  FrToOup
+  FrToOup,
+  FrToUrec,
+  FrToUro
 } from '@/components'
 
 export default{
   components: {
     FrToCrec,
     FrToRerc,
-    FrToOup
+    FrToOup,
+    FrToUrec,
+    FrToUro
   },
   data () {
     return {

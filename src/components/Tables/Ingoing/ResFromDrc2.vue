@@ -1,6 +1,6 @@
 <template>
   <div>
-    <md-table v-model="documentsState9" :table-header-color="tableHeaderColor">
+    <md-table v-model="documentsState6" :table-header-color="tableHeaderColor">
       <md-table-row slot="md-table-row" slot-scope="{ item }">
         <md-table-cell md-label="Time Posted">{{ item.prev_release }}</md-table-cell>
         <md-table-cell md-label="Tracking number">{{ item.tracking_number }}</md-table-cell>
@@ -18,7 +18,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'res-from-uro',
+  name: 'res-from-drc2',
   props: {
     tableHeaderColor: {
       type: String,
@@ -29,17 +29,17 @@ export default {
     return {
       selected: [],
       documents: [],
-      documentsState9: []
+      documentsState6: []
     }
   },
   created: async function () {
-  await this.getDocuments()
+    await this.getDocuments()
   },
   methods: {
     getDocuments: async function () {
       const rootApi = process.env.VUE_APP_ROOT_API
       this.documents = (await axios.get(`${rootApi}/documents`)).data
-      this.documentsState9 = this.documents.filter(d => d.state === 9 && d.received === null)
+      this.documentsState6 = this.documents.filter(d => d.state === 6 && d.received === null)
     },
     receiveDocument: async function (documentId) {
       const rootApi = process.env.VUE_APP_ROOT_API

@@ -51,7 +51,6 @@ export default {
         pwd: this.login.password
       }
       const rootApi = process.env.VUE_APP_ROOT_API
-      // const user = await axios.post('http://172.16.1.63:3000/users/login', data)
       const user = await axios.post(`${rootApi}/users/login`, data)
       store.commit('login', user.data)
       if (user.data.agreed) {
