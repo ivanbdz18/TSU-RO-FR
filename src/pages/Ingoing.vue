@@ -15,6 +15,17 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
         <md-card>
           <md-card-header data-background-color="green">
+            <h4 class="md-title">Ingoing Research from DRC</h4>
+            <p class="category">List of Documents</p>
+          </md-card-header>
+          <md-card-content>
+            <res-from-drc2 class="md-body-2" table-header-color="orange"></res-from-drc2>
+          </md-card-content>
+        </md-card>
+      </div>
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
+        <md-card>
+          <md-card-header data-background-color="green">
             <h4 class="md-title">Ingoing Research from URO</h4>
             <p class="category">List of Documents</p>
           </md-card-header>
@@ -52,6 +63,7 @@
 <script>
 import {
   ResFromDrc,
+  ResFromDrc2,
   ResFromUro,
   ResFromRerc,
   ResFromUro2
@@ -60,6 +72,7 @@ import {
 export default{
   components: {
     ResFromDrc,
+    ResFromDrc2,
     ResFromUro,
     ResFromRerc,
     ResFromUro2
