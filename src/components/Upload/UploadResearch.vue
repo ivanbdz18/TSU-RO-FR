@@ -25,23 +25,23 @@
               <md-input v-model="coauthor3" type="text" required></md-input>
             </md-field>
           </div> -->
-          <div class="md-layout-item md-size-60">
+          <div class="md-layout-item">
       <md-field>
-        <label for="movies">Movies</label>
-        <md-select v-model="selectedMovies" name="movies" id="movies" multiple>
-          <md-option value="fight-club">Fight Club</md-option>
-          <md-option value="godfather">Godfather</md-option>
-          <md-option value="godfather-ii">Godfather II</md-option>
-          <md-option value="godfather-iii">Godfather III</md-option>
-          <md-option value="godfellas">Godfellas</md-option>
-          <md-option value="pulp-fiction">Pulp Fiction</md-option>
-          <md-option value="scarface">Scarface</md-option>
+        <label for="co authors">Co Authors</label>
+        <md-select v-model="selectedAuthors" name="movies" id="movies" multiple>
+          <md-option value="Anjeanette Francia">Anjeanette Francia</md-option>
+          <md-option value="Michelle Quibuyen">Michelle Quibuyen</md-option>
+          <md-option value="Nomar Lapitan">Nomar Lapitan</md-option>
+          <md-option value="Darion Estrella">Darion Estrella</md-option>
+          <md-option value="Francis Herlaban">Francis Herlaban</md-option>
+          <md-option value="Erandy Magdaleno">Erandy Magdaleno</md-option>
+          <md-option value="Joshua Manalo">Joshua Manalo</md-option>
         </md-select>
       </md-field>
 
       <div>
-        <strong>Selected movies:</strong>
-        {{ selectedMovies }}
+        <strong>Selected co authors:</strong>
+        {{ selectedAuthors }}
       </div>
     </div>
           <div class="md-layout-item md-size-60">
@@ -58,7 +58,7 @@
   </form>
 </template>
 
-<script> // TODO
+<script>
 export default {
   name: 'upload-research',
   props: {
@@ -69,7 +69,7 @@ export default {
   },
   data () {
     return {
-      selectedMovies: [],
+      selectedAuthors: [],
       leadresearcher: null,
       coauthor1: null,
       coauthor2: null,

@@ -10,7 +10,7 @@
       @md-confirm="onConfirm" />
     <md-table v-model="users" :table-header-color="tableHeaderColor">
       <md-table-row slot="md-table-row" slot-scope="{ item }">
-        <md-table-cell md-label="Track No.">{{ item.track }}</md-table-cell>
+        <md-table-cell md-label="Track No.">{{ item.tracking_number }}</md-table-cell>
         <md-table-cell md-label="Title">{{ item.title }}</md-table-cell>
         <md-table-cell md-label="Author">{{ item.author }}</md-table-cell>
         <md-table-cell md-label="Track Document">
@@ -30,7 +30,7 @@
   </div>
 </template>
 
-<script> // TODO
+<script>
 export default {
   name: 'documents-table',
   props: {
@@ -45,12 +45,12 @@ export default {
       selected: [],
       users: [
         {
-          track: 1001,
+          tracking_number: '80cd9201-7e2e-457b',
           title: 'Faculty Research Tracker',
           author: 'Ivan Badbaden, Anjeanette Francia'
         },
         {
-          track: 1002,
+          tracking_number: '25fg2548-9e7r-459s',
           title: 'Student Research Tracker',
           author: 'Nomar Lapitan, Michelle Quibuyen'
         }

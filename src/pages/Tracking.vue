@@ -7,13 +7,10 @@
             <h4 class="md-title">Faculty Research Tracking </h4>
           </md-card-header>
           <md-card-content>
-            <md-button @click="goBack" class="md-raised md-success">Go Back</md-button>
+            <md-button @click="goBack" class="md-raised md-danger">Go Back</md-button>
             <track-table class="md-body-2" table-header-color="orange"></track-table>
           </md-card-content>
         </md-card>
-      </div>
-      <div class="md-layout-item md-size-100 text-right">
-          <md-button @click="goBack" class="md-raised md-success">Go Back</md-button>
       </div>
     </div>
     </div>

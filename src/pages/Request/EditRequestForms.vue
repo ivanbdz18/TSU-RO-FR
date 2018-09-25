@@ -53,7 +53,7 @@
     </md-card>
   </form>
 </template>
-<script> // TODO
+<script>
 export default {
   name: 'edit-request-form',
   props: {

@@ -25,7 +25,7 @@
     </md-card>
   </form>
 </template>
-<script>
+<script>// TODO
 export default {
   name: 'prog-report',
   props: {
