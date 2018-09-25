@@ -18,6 +18,7 @@ import ResFromUro2 from './Tables/Ingoing/ResFromUro2.vue'
 import FrToCrec from './Tables/Outgoing/FrToCrec.vue'
 import FrToRerc from './Tables/Outgoing/FrToRerc.vue'
 import FrToUrec from './Tables/Outgoing/FrToUrec.vue'
+import FrToUro from './Tables/Outgoing/FrToUro.vue'
 import FrToOup from './Tables/Outgoing/FrToOup.vue'
 import UploadResearch from './Upload/UploadResearch.vue'
 
@@ -40,5 +41,6 @@ export {
   FrToRerc,
   FrToOup,
   FrToUrec,
+  FrToUro,
   UploadResearch
 }
