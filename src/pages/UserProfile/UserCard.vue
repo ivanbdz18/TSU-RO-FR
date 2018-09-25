@@ -7,7 +7,7 @@
     <md-card-content>
       <h6 class="category text-gray">Faculty Researcher</h6>
       <h4 class="card-title">Ivan Dale D. Badbaden</h4>
-      <md-button class="md-round md-error" @click="signOut">Sign Out</md-button>
+      <md-button class="md-round md-danger" @click="signOut">Sign Out</md-button>
     </md-card-content>
   </md-card>
 </template>

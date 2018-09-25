@@ -4,7 +4,7 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
         <md-card>
           <md-card-header data-background-color="green">
-            <h4 class="md-title">Ingoing Research from DRC</h4>
+            <h4 class="md-title">Incoming Research from DRC</h4>
             <p class="category">List of Documents</p>
           </md-card-header>
           <md-card-content>
@@ -15,7 +15,7 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
         <md-card>
           <md-card-header data-background-color="green">
-            <h4 class="md-title">Ingoing Research from DRC</h4>
+            <h4 class="md-title">Incoming Research from DRC</h4>
             <p class="category">List of Documents</p>
           </md-card-header>
           <md-card-content>
@@ -26,7 +26,7 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
         <md-card>
           <md-card-header data-background-color="green">
-            <h4 class="md-title">Ingoing Research from URO</h4>
+            <h4 class="md-title">Incoming Research from URO</h4>
             <p class="category">List of Documents</p>
           </md-card-header>
           <md-card-content>
@@ -37,7 +37,7 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
         <md-card>
           <md-card-header data-background-color="green">
-            <h4 class="md-title">Ingoing Research from RERC</h4>
+            <h4 class="md-title">Incoming Research from RERC</h4>
             <p class="category">List of Documents</p>
           </md-card-header>
           <md-card-content>
@@ -48,7 +48,7 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
         <md-card>
           <md-card-header data-background-color="green">
-            <h4 class="md-title">Ingoing Research from URO</h4>
+            <h4 class="md-title">Incoming Research from URO</h4>
             <p class="category">List of Documents</p>
           </md-card-header>
           <md-card-content>

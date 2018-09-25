@@ -5,7 +5,12 @@
         <md-table-cell md-label="Time Date">{{ item.received }}</md-table-cell>
         <md-table-cell md-label="Tracking No.">{{ item.tracking_number }}</md-table-cell>
         <md-table-cell md-label="Research Title">{{ item.title }}</md-table-cell>
+        <md-table-cell md-label="Authors">{{ item.author }}</md-table-cell>
         <md-table-cell md-label="Action">
+          <md-button class="md-just-icon md-simple md-primary">
+            <md-icon>get_app</md-icon>
+            <md-tooltip md-direction="bottom">Download</md-tooltip>
+          </md-button>
           <md-button class="md-raised md-success" @click.native="proceed(item.id)">Proceed</md-button>
         </md-table-cell>
       </md-table-row>
@@ -28,7 +33,14 @@ export default {
     return {
       selected: [],
       documents: [],
-      documentsState3: []
+      documentsState3: [
+        {
+          received: '11/15/18 06:05:25',
+          tracking_number: '94ss6841-8f5g-513s',
+          title: 'Predicting stock returns with Twitter: A test of semi-strong form EMH',
+          author: 'Michael Mercado, Olie Carreon'
+        }
+      ]
     }
   },
   created: async function () {

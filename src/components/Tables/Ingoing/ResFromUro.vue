@@ -33,7 +33,7 @@ export default {
     }
   },
   created: async function () {
-  await this.getDocuments()
+    await this.getDocuments()
   },
   methods: {
     getDocuments: async function () {

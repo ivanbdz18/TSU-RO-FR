@@ -5,7 +5,12 @@
         <md-table-cell md-label="Time Date">{{ item.received }}</md-table-cell>
         <md-table-cell md-label="Tracking No.">{{ item.tracking_number }}</md-table-cell>
         <md-table-cell md-label="Research Title">{{ item.title }}</md-table-cell>
+        <md-table-cell md-label="Authors">{{ item.author }}</md-table-cell>
         <md-table-cell md-label="Action">
+          <md-button class="md-just-icon md-simple md-primary">
+            <md-icon>get_app</md-icon>
+            <md-tooltip md-direction="bottom">Download</md-tooltip>
+          </md-button>
           <md-button class="md-raised md-success" @click.native="proceed(item.id)">Proceed</md-button>
         </md-table-cell>
       </md-table-row>
@@ -28,7 +33,14 @@ export default {
     return {
       selected: [],
       documents: [],
-      documentsState6: []
+      documentsState6: [
+        {
+          received: '12/05/18 04:41:25',
+          tracking_number: '75os6155-6e5f-642k',
+          title: 'Can Online Word of Mouth Assign a Product Price?',
+          author: 'Antonio Tinio, Kevin Morales, Joshua Carreon'
+        }
+      ]
     }
   },
   created: async function () {
