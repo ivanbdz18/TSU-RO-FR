@@ -13,6 +13,7 @@ import PasswordChange from '@/pages/PasswordChange.vue'
 import IngoingResearch from '@/pages/Ingoing.vue'
 import OutgoingResearch from '@/pages/Outgoing.vue'
 import ProgressReport from '@/pages/ProgressReport.vue'
+import FullResDetail from '@/pages/FullResDetail.vue'
 
 const routes = [
   {
@@ -81,6 +82,11 @@ const routes = [
         path: 'progreport',
         name: 'Upload Progress Report',
         component: ProgressReport
+      },
+      {
+        path: 'fullresdetail',
+        name: 'Research Detail',
+        component: FullResDetail
       },
       {
         path: 'notifications',

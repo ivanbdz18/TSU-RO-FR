@@ -21,6 +21,7 @@ import FrToUrec from './Tables/Outgoing/FrToUrec.vue'
 import FrToUro from './Tables/Outgoing/FrToUro.vue'
 import FrToOup from './Tables/Outgoing/FrToOup.vue'
 import UploadResearch from './Upload/UploadResearch.vue'
+import ResDet from './Tables/ResDet.vue'
 
 export {
   ChartCard,
@@ -42,5 +43,6 @@ export {
   FrToOup,
   FrToUrec,
   FrToUro,
-  UploadResearch
+  UploadResearch,
+  ResDet
 }

@@ -18,6 +18,10 @@
             <md-icon>remove_red_eye</md-icon>
             <md-tooltip md-direction="bottom">Track Document</md-tooltip>
           </md-button>
+          <md-button to="fullresdetail" class="md-just-icon md-simple md-primary">
+            <md-icon>assignment</md-icon>
+            <md-tooltip md-direction="bottom">Full Research Detail</md-tooltip>
+          </md-button>
         </md-table-cell>
         <md-table-cell md-label="Action">
           <md-button class="md-raised md-primary" @click="active = true">Update</md-button>
