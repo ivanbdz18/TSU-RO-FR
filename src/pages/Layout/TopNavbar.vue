@@ -18,7 +18,7 @@
             </md-autocomplete>
           </div>
           <md-list>
-            <md-list-item to="/notifications" class="dropdown">
+            <md-list-item class="dropdown">
               <drop-down>
                 <a slot="title" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="material-icons">notifications</i>
